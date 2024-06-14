@@ -4,7 +4,7 @@ import (
     "context"
     "log"
     "time"
-    pb "48HW/proto" // To'g'ri import yo'lini ta'minlash kerak
+    pb "48HW/proto" 
 
     "google.golang.org/grpc"
     "google.golang.org/grpc/credentials/insecure"
