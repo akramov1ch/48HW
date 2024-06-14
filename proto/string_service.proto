@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option go_package = "./proto";
+
+service StringService {
+  rpc ToUpperCase(StringRequest) returns (StringReply) {}
+  rpc ToLowerCase(StringRequest) returns (StringReply) {}
+  rpc ReverseString(StringRequest) returns (StringReply) {}
+  rpc GetStringLength(StringRequest) returns (LengthReply) {}
+}
+
+message StringRequest {
+  string input = 1;
+}
+
+message StringReply {
+  string result = 1;
+}
+
+message LengthReply {
+  int32 length = 1;
+}
